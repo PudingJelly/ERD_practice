@@ -2,6 +2,7 @@ package jdbc;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
+import java.sql.PreparedStatement;
 import java.util.Scanner;
 
 public class JDBCInsert {
@@ -63,6 +64,7 @@ public class JDBCInsert {
 			 객체를 받아옵니다.
 			 매개값으로 실행시킬 SQL문을 전달합니다.
 			 */
+			PreparedStatement pstmt = conn.prepareStatement(sql);
 			
 			
 			
